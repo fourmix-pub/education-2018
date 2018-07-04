@@ -14,6 +14,7 @@ background: #231409;
 text-align:center;
 position: relative;
 padding: 0.3em;
+border:0.5em;
 }
 
 .maturi:after {
@@ -22,9 +23,16 @@ padding: 0.3em;
   left: 0;
     bottom: 0;
   width: 100%;
-    height: 7px;
-    background: repeating-linear-gradient(-45deg, skyblue, skyblue 2px, white 2px, white 4px);
+    height:5px;
+    background: repeating-linear-gradient(-45deg, #50CCA9, #50CCA9 2px, white 2px, white 4px);
   }
+
+.maturi a{
+background: #231409;
+text-align:center;
+border-bottom: dotted 3px #D7C7BB;
+}
+
 .oishi{
 background: #231409;
 text-align:center;
