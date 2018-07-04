@@ -27,9 +27,7 @@ border:0.5em;
     background: repeating-linear-gradient(-45deg, #50CCA9, #50CCA9 2px, white 2px, white 4px);
 border:0.5em;
   }
-
-.maturi a{
-background: #231409;
+a{
 text-align:center;
 border-bottom: dotted 3px #D7C7BB;
 
@@ -48,4 +46,5 @@ width:auto;
     margin: 2em 0;
 border:solid  5px #D1D5D4;
 box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+background:#fff;
 }
