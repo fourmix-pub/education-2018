@@ -1,7 +1,10 @@
 body{
 background: #51443C; 
 }
-
+a{
+color:#C6F2E1;
+text-decolation:none;
+}
 .main{
 color: #C6F2E1;
 font-size: 25px;
