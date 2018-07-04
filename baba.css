@@ -1,3 +1,11 @@
-p{font-size:20px;
-color:red;}
-
+body{
+	backgroud: #ffffff;
+}
+a{
+	color: #ffddff;
+	font-size:30px;
+}
+.main{
+	color: #ffddff;
+	font-size:30px;
+}
