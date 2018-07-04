@@ -102,3 +102,21 @@ h2 span::after {
 .fl_tw .twicon .fa {
   line-height: 50px;
 }
+.btn1{
+  display: inline-block;
+  text-decoration: none;
+  background: #87befd;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.btn1:hover{
+    background: #668ad8;
+}
