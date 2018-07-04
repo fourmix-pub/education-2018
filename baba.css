@@ -12,3 +12,7 @@ a{
 h1 {
 background: linear-gradient(transparent 70%, #a7d6ff 70%);
 }
+ .canvas {
+    background-image:
+      linear-gradient(lightblue, white 50%);
+  }
