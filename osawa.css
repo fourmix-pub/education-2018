@@ -2,4 +2,7 @@ body{
 	background:#DDDDDD;
 }
 
-div.text1 {letter-spacing: 20px;}
+div.text1
+ {letter-spacing: 20px;
+font-size:15px;
+}
