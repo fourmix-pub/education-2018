@@ -25,16 +25,17 @@ border:0.5em;
   width: 100%;
     height:5px;
     background: repeating-linear-gradient(-45deg, #50CCA9, #50CCA9 2px, white 2px, white 4px);
+border:0.5em;
   }
 
 .maturi a{
 background: #231409;
 text-align:center;
 border-bottom: dotted 3px #D7C7BB;
+
 }
 
 .oishi{
-background: #231409;
 text-align:center;
 }
 .oishi img{
@@ -42,3 +43,9 @@ height:200px;
 width:auto;
 }
 
+.mint img{
+  padding: 0.5em 1em;
+    margin: 2em 0;
+border:solid  5px #D1D5D4;
+box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
