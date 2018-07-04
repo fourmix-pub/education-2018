@@ -16,3 +16,32 @@ background: linear-gradient(transparent 70%, #a7d6ff 70%);
     background-image:
       linear-gradient(lightblue, white 50%);
   }
+ h2 {
+     text-align: center;
+}
+ 
+h2 span{
+     position: relative;
+     display: inline-block;
+     padding-bottom:0.5em;
+     border-bottom: 1px solid black;
+}
+      
+h2 span::before,
+h2 span::after {
+     position: absolute;
+     top: 100%;
+     left:50%;
+     transform:translateX(-50%);
+     content: '';
+     border: 10px solid transparent;
+}
+ 
+h2 span::before {
+     border-top: 10px solid black;
+}
+ 
+h2 span::after {
+     margin-top: -1px;
+     border-top: 10px solid white;
+}
