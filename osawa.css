@@ -27,3 +27,7 @@ h1 {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        
+        .border{
+  border-top: solid 2px gray;
+  }
