@@ -1,4 +1,0 @@
-題字:title
-見出し：midashi
-画像：img
-本文とか：honbun
