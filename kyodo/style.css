@@ -9,3 +9,21 @@ text-align:center;
 background:#DEFAFB;
 }
 
+.name{
+	text-align:center;
+	font-size: 40px;
+	
+}
+
+a{
+text-decoration: none;
+color:black;
+}
+
+.color1{
+            text-align: center;
+            background-image: url("img/osawa.jpeg");
+            background-position: center;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
