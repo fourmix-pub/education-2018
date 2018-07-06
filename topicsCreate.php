@@ -21,7 +21,7 @@
           <input type="submit" value="作成" class="btn btn-primary">
         </form>
       </div>
-    </div>ß
+    </div>
     </div>
   </div>
   </body>
