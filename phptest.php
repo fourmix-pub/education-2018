@@ -5,7 +5,7 @@
     <title></title>
   </head>
   <body>
-    <form action="recevetest.php" method=post>
+    <form action="receivetest.php" method=post>
       <p>名前<input type="text" name="namae"></p>
       <imput type = "submit" value ="送信"></p>
       </form>
