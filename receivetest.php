@@ -7,7 +7,10 @@
   <body>
     <p>
       <?php print($_POST ['namae']); ?>
-      さん、こんにちは。
+      さん、
+      <?php print($_POST ['holoscope']); ?>
+      の
+      <?php print($_POST ['blood']); ?>型ね。
     </p>
   </body>
 </html>
