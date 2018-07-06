@@ -20,6 +20,9 @@
         <?php print($_POST ['contents']); ?></p>
         <input type="button" onclick="location.href='newPost.php'" value="投稿">
       </div>
+      <p class="card-text">
+        <?php print($_POST ['pName']); ?>：
+        <?php print($_POST ['pContents']); ?></p>
     </div>
   </div>
   </body>
