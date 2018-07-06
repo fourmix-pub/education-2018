@@ -18,7 +18,7 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12 text-right">
-                  <a href="newTopic.php" class="btn btn-primary">お題作成</a>
+                  <a href="topicsCreate.php" class="btn btn-primary">お題作成</a>
                 </div>
               </div>
               <hr>
