@@ -11,15 +11,15 @@
     <div class="container">
     <div class="card">
       <div class="card-header">
-        Featured
+        新規トピックス作成
       </div>
       <div class="card-body">
-        <h5 class="card-title">新規トピックス作成</h5>
         <p class="card-text">タイトル  <?php print($_POST ['title']); ?><br>
         コンテンツ  <?php print($_POST ['contents']); ?></p>
-        <input type="submit" value="送信" class="btn btn-primary">
+        <input type="submit" value="作成" class="btn btn-primary">
       </div>
     </div>
     </div>
+  </div>
   </body>
 </html>
