@@ -27,4 +27,10 @@ class Database
     $res = $this->mysql->query("SELECT * FROM comments WHERE topic_id = {$topicId}");
     return $res->fetch_all(1);
   }
+
+  public function commentReplies(int $commentId): array
+  {
+    $res = $this->mysql->query("SELECT * FROM replies WHERE comment_id = {$commentId}");
+    return $res->fetch_all(1);
+  }
 }
