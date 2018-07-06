@@ -12,10 +12,9 @@
     <div class="container">
       <div class="card text-center">
         <div class="card-header">
-          Featured
+        <?php print($_POST ['title']); ?>
         </div>
         <div class="card-body">
-          <h5 class="card-title"> <?php print($_POST ['title']); ?></h5>
           <p class="card-text">
           コンテンツ  <?php print($_POST ['contents']); ?></p>
       </div>
