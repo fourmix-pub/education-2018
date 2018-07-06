@@ -49,6 +49,23 @@ $comments = $db->topicComments($topicId);
                         <p class="card-text">
                           <?= $comment['content'] ?>
                         </p>
+                        <hr>
+                        <?php foreach ($db->commentReplies($comment['id']) as $reply): ?>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="card text-left">
+                                <div class="card-header">
+                                  <?= $reply['name'] ?>
+                                </div>
+                                <div class="card-body">
+                                  <p class="card-text">
+                                    <?= $reply['content'] ?>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <?php endforeach ?>
                       </div>
                     </div>
                   </div>
