@@ -1,8 +1,9 @@
 <?php
 require __DIR__.'/Database.php';
-$id = $_GET['topic'];
+$topicId = $_GET['topic'];
 $db = new Database();
-$topic = $db->findTopic($id);
+$topic = $db->findTopic($topicId);
+$comments = $db->topicComments($topicId);
 ?>
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
@@ -37,6 +38,22 @@ $topic = $db->findTopic($id);
                   </div>
                 </div>
               </div>
+              <?php foreach ($comments as $comment): ?>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card text-left">
+                      <div class="card-header">
+                        <?= $comment['name'] ?>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          <?= $comment['content'] ?>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <?php endforeach ?>
             </div>
           </div>
         </div>
