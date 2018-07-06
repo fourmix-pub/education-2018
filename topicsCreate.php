@@ -1,3 +1,9 @@
+<? $err_msg1 = "";
+$err_msg2 = "";
+$message ="";
+$name = ( isset( $_POST["title"] ) === true ) ?$_POST["name"]: "";
+$comment  = ( isset( $_POST["contents"] )  === true ) ?  trim($_POST["comment"])  : "";
+?>
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
   <head>
@@ -5,13 +11,13 @@
     <script src="/js/bootstrap.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>新規トピックス作成</title>
   </head>
   <body>
     <div class="container">
     <div class="card">
       <div class="card-header">
-        新規トピックス作成
+        お題はなんですか？
       </div>
       <div class="card-body">
           <form action="newTopic.php" method=post>
