@@ -1,4 +1,5 @@
 <?php
+require __DIR__.'/Models/Topic.php';
 
 class Database
 {
@@ -32,5 +33,14 @@ class Database
   {
     $res = $this->mysql->query("SELECT * FROM replies WHERE comment_id = {$commentId}");
     return $res->fetch_all(1);
+  }
+
+  public function createTopic(Topic $topic): bool
+  {
+    $stmt = $this->mysql->prepare("INSERT INTO topics(title,content,name) VALUES (?,?,?)");
+    $stmt->bind_param('sss', $topic->title, $topic->content, $topic->name);
+    $stmt->execute();
+    $stmt->close();
+    return true;
   }
 }

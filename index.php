@@ -24,7 +24,7 @@ $topics = $db->topics();
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12 text-right">
-                  <a href="" class="btn btn-primary">お題作成</a>
+                  <a href="/create-topic.php" class="btn btn-primary">話題作成</a>
                 </div>
               </div>
               <hr>
