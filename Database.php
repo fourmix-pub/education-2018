@@ -21,4 +21,10 @@ class Database
     $res = $this->mysql->query("SELECT * FROM topics WHERE id = {$id}");
     return $res->fetch_assoc();
   }
+
+  public function topicComments(int $topicId): array
+  {
+    $res = $this->mysql->query("SELECT * FROM comments WHERE topic_id = {$topicId}");
+    return $res->fetch_all(1);
+  }
 }
