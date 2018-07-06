@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <meta charset="utf-8">
     <title></title>
   </head>
