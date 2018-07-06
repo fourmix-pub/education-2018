@@ -1,3 +1,23 @@
+<?php
+class Database
+{
+  protected $mysql;
+  public function __construct()
+  {
+    $this->mysql = new mysqli('127.0.0.1', 'homestead', 'secret', 'homestead');
+    if ($mysqli->connect_errno) {
+    echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+  }
+  }
+  public function topics()
+  {
+    $res->$this->topics->query("SELECT * FROM topics");
+    return $res -> fetch_all(1);
+  }
+}
+    $db= new Database();
+    $topics = $db -> topics();
+ ?>
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
   <head>
@@ -22,31 +42,11 @@
                 </div>
               </div>
               <hr>
+              <?= foreach ($topics as $topic);?>
               <div class="row">
                 <div class="col-md-12 text-left">
                   <div class="alert alert-dark" role="alert">
-                <a href="#"> A simple dark alert—check it out!</a>
-                </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12 text-left">
-                  <div class="alert alert-dark" role="alert">
-                <a href="#"> A simple dark alert—check it out!</a>
-                </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12 text-left">
-                  <div class="alert alert-dark" role="alert">
-                <a href="#"> A simple dark alert—check it out!</a>
-                </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12 text-left">
-                  <div class="alert alert-dark" role="alert">
-                <a href="#"> A simple dark alert—check it out!</a>
+                <a href="#"> <?= $topic?></a>
                 </div>
                 </div>
               </div>
