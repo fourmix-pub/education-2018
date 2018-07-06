@@ -1,3 +1,9 @@
+<?php
+require __DIR__."/Database.php";
+
+$db = new Database();
+$topics = $db->topics();
+?>
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
   <head>
@@ -18,38 +24,19 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12 text-right">
-                  <a href="#" class="btn btn-primary">お題作成</a>
+                  <a href="" class="btn btn-primary">お題作成</a>
                 </div>
               </div>
               <hr>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="alert alert-dark text-left" role="alert">
-                    <a href="#">A simple dark alert—check it out!</a>
+              <?php foreach($topics as $topic):  ?>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="alert alert-dark text-left" role="alert">
+                      <a href="/topic.php?topic=<?= $topic['id'] ?>"><?= $topic['title'] ?></a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="alert alert-dark text-left" role="alert">
-                    <a href="#">A simple dark alert—check it out!</a>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="alert alert-dark text-left" role="alert">
-                    <a href="#">A simple dark alert—check it out!</a>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="alert alert-dark text-left" role="alert">
-                    <a href="#">A simple dark alert—check it out!</a>
-                  </div>
-                </div>
-              </div>
+              <?php endforeach ?>
             </div>
           </div>
         </div>
