@@ -11,11 +11,13 @@
 
     <div class="container">
       <div class="card text-center">
-        <div class="card-header">
+        <div class="card-header">ß
         <?php print($_POST ['title']); ?>
         </div>
         <div class="card-body">
           <p class="card-text">
+            <?php print($_POST ['name']); ?>
+          <br>
         <?php print($_POST ['contents']); ?></p>
       </div>
     </div>

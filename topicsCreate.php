@@ -1,9 +1,3 @@
-<? $err_msg1 = "";
-$err_msg2 = "";
-$message ="";
-$name = ( isset( $_POST["title"] ) === true ) ?$_POST["name"]: "";
-$comment  = ( isset( $_POST["contents"] )  === true ) ?  trim($_POST["comment"])  : "";
-?>
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
   <head>
@@ -21,12 +15,13 @@ $comment  = ( isset( $_POST["contents"] )  === true ) ?  trim($_POST["comment"])
       </div>
       <div class="card-body">
           <form action="newTopic.php" method=post>
-          <p>タイトル<input type="text" name="title"></p>
+            <p>タイトル<input type="text" name="title"></p>
+            <p>お名前<input type="text" name="name"></p>
           <p>コンテンツ<input type="text" name="contents"></p>
           <input type="submit" value="作成" class="btn btn-primary">
         </form>
       </div>
-    </div>
+    </div>ß
     </div>
   </div>
   </body>
