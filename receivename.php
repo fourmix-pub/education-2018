@@ -7,7 +7,7 @@
   <body>
     <p>
     <?php
-      print ($_POST['name'])
+      print ($_POST['namae'])
       ?>
       さん、こんにちは。
       </p>
