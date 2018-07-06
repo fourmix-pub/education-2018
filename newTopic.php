@@ -16,7 +16,7 @@
         </div>
         <div class="card-body">
           <p class="card-text">
-          コンテンツ  <?php print($_POST ['contents']); ?></p>
+        <?php print($_POST ['contents']); ?></p>
       </div>
     </div>
   </div>
