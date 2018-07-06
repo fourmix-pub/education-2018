@@ -15,9 +15,9 @@
           Featured
         </div>
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">タイトル  <?php print($_POST ['title']); ?><br>
-          コンテンツ  <?php print($_POST ['contents']); ?></p> 
+          <h5 class="card-title"> <?php print($_POST ['title']); ?></h5>
+          <p class="card-text">
+          コンテンツ  <?php print($_POST ['contents']); ?></p>
       </div>
     </div>
   </div>

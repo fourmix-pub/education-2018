@@ -14,11 +14,11 @@
         新規トピックス作成
       </div>
       <div class="card-body">
-        <form action="newcontents.php" method=post>
-        <p>タイトル<input type="text" name="title"></p>
-        <p>コンテンツ<input type="text" name="contents"></p>
-        <input type="submit" value="作成" class="btn btn-primary">
-      </form>
+          <form action="newTopic.php" method=post>
+          <p>タイトル<input type="text" name="title"></p>
+          <p>コンテンツ<input type="text" name="contents"></p>
+          <input type="submit" value="作成" class="btn btn-primary">
+        </form>
       </div>
     </div>
     </div>
