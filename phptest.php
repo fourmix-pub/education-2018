@@ -7,7 +7,7 @@
   <body>
     <form action="receivetest.php" method=post>
       <p>名前<input type="text" name="namae"></p>
-      <imput type = "submit" value ="送信"></p>
+      <input type = "submit" value ="送信"></p>
       </form>
   </body>
 </html>
