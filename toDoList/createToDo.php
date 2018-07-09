@@ -18,12 +18,18 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12 text-left">
-                  <form action="/sotre-topic.php" method="post">
+                  <form action="/sotre-toDo.php" method="post">
                     <div class="form-group">
                       <label for="exampleInputEmail2">やること</label>
-                      <input type="text" name="toDo" class="form-control" id="exampleInputEmail2">
+                      <input type="text" name="title" class="form-control" id="exampleInputEmail2">
                     </div>
-                    <button type="submit" class="btn btn-primary">作成</button>
+                    <div class="form-group">
+                      <input type="hidden" name="id" class="form-control" id="exampleInputEmail2">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="comp_flg" class="form-control" id="exampleInputEmail2">
+                    </div>
+                    <button type="submit" class="btn btn-primary">追加</button>
                     <button type="submit" class="btn btn-danger"　onclick="location href='main.php'">戻る</button>
                   </form>
                 </div>
