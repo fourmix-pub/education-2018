@@ -47,6 +47,7 @@ class Database
                 <div class="col-md-12 text-left">
                   <div class="alert alert-dark" role="alert">
               <?= $list?>
+              <a href="comp.php" class="btn btn-info">完了</button>
                 </div>
                 </div>
               </div>
